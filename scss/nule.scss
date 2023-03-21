@@ -1,0 +1,100 @@
+* {
+   padding: 0px;
+   margin: 0px;
+   border: 0px;
+}
+
+$font: 'IBM Plex Sans', sans-serif;
+$buttonColor: #1064E5;
+$buttonColorActive: #0046B0;
+$backgroundfon: #D8F1F0;
+$colorText: rgba(6, 18, 36, 0.9);
+
+%button {
+   border: 1.5px solid $buttonColor;
+   border-radius: 40px;
+   font-family: $font;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 24px;
+   text-transform: uppercase;
+   padding: 11px 32px;
+}
+
+@mixin fontP($Pstyle, $Pweight, $Psize, $Pline-height) {
+   font-style: $Pstyle;
+   font-weight: $Pweight;
+   font-size: $Psize;
+   line-height: $Pline-height;
+}
+
+
+
+a,
+a:visited,
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+h1 {
+   font-family: 'IBM Plex Serif', serif;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 40px;
+   line-height: 46px;
+   color: $colorText;
+}
+
+h2 {
+   font-family: $font;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 130%;
+   color: $colorText;
+}
+
+p {
+   font-family: $font;
+   color: $colorText;
+}
+
+button {
+   background: none;
+}
+
+.button_contr {
+   @extend %button;
+   color: #061224;
+}
+
+.button_contr:hover {
+   background: $buttonColor;
+   border: 1.5px solid $buttonColor;
+   border-radius: 39px;
+   color: #FFFFFF;
+}
+
+.button_fill {
+   @extend %button;
+   background: $buttonColor;
+   color: #FFFFFF;
+}
+
+.button_fill:hover {
+   background: none;
+   color: $buttonColor;
+}
+
+.button_contr:active,
+.button_fill:active {
+   background: $buttonColorActive;
+   border: 1.5px solid $buttonColorActive;
+   border-radius: 44px;
+   color: #FFFFFF;
+}

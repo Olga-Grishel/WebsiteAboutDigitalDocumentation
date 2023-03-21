@@ -1,0 +1,227 @@
+@import "nule.scss";
+
+.benefits {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin-top: 50px;
+
+   .benefits-fast,
+   .benefits-global,
+   .benefits-economy {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+   }
+
+   .benefits-economy__text,
+   .benefits-global__text,
+   .benefits-fast__text {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+
+   p {
+      @include fontP(normal, 400, 16px, 130%);
+      margin: 0px;
+
+   }
+}
+
+.howWork {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   background-color: #D8F1F0;
+   align-items: center;
+   justify-items: center;
+   margin: 80px 0px;
+   padding: 60px 0px;
+
+   li::before {
+      content: "-";
+      list-style-position: outside;
+
+   }
+
+   ul {
+      margin: 0px;
+      padding-left: 20px;
+   }
+
+   li {
+      margin-bottom: 10px;
+      @include fontP(normal, 400, 18px, 130%);
+   }
+
+   h1 {
+      margin-bottom: 30px;
+      padding-left: 20px;
+   }
+
+   button {
+      margin-top: 10px;
+   }
+
+}
+
+.offer {
+   h1 {
+      text-align: center;
+   }
+
+   .offer-packet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 30px;
+
+      .offer-packet__demo,
+      .offer-packet__business,
+      .offer-packet__pro,
+      .offer-packet__individual {
+         background: #DEEEFC;
+         width: 256px;
+         text-align: center;
+         padding: 50px 0px;
+
+         button {
+            width: 200px;
+            padding: 10px 0px;
+            margin-top: 20px;
+         }
+
+         .button_individual {
+
+            margin-top: 55px;
+         }
+
+         h2 {
+            margin-bottom: 30px;
+         }
+
+         p {
+            @include fontP(normal, 500, 16px, 24px);
+
+            span {
+               @include fontP(normal, 700, 48px, 48px);
+            }
+         }
+
+      }
+
+   }
+
+}
+
+.achievement {
+   background-color: #D8F1F0;
+   text-align: center;
+   padding: 50px 0px;
+   margin: 50px 0px;
+
+   p {
+      @include fontP(normal, 400, 18px, 28px);
+   }
+
+   h2 {
+      font-size: 40px;
+      padding: 20px 0px;
+   }
+
+
+}
+
+.animation {
+   font-size: 74px;
+   display: flex;
+   justify-content: center;
+
+   .animation2 {
+      font-size: 74px;
+      position: relative;
+      width: 1em;
+      height: 1em;
+
+      &:before,
+      &:after {
+         content: "0123456789";
+         display: inline-block;
+         width: .5em;
+         overflow: hidden;
+         animation: calculate 10s infinite step-end;
+      }
+
+
+      &:before {
+         animation-duration: 100s;
+      }
+
+      @keyframes calculate {
+         10% {
+            text-indent: -.5em;
+         }
+
+         20% {
+            text-indent: -1.1em;
+         }
+
+         30% {
+            text-indent: -1.6em;
+         }
+
+         40% {
+            text-indent: -2.2em;
+         }
+
+         50% {
+            text-indent: -2.7em;
+         }
+
+         60% {
+            text-indent: -3.3em;
+         }
+
+         70% {
+            text-indent: -3.8em;
+         }
+
+         80% {
+            text-indent: -4.35em;
+         }
+
+         90% {
+            text-indent: -4.9em;
+         }
+      }
+
+   }
+
+}
+
+.news {
+   text-align: center;
+
+   p {
+      margin: 50px 0px;
+   }
+
+   input {
+      border: 1.5px solid $buttonColor;
+      border-radius: 39px;
+      width: 399px;
+      height: 50px;
+      padding: 0px 40px;
+      @include fontP(normal, 400, 18px, 24px);
+      color: $buttonColorActive;
+
+      &:focus {
+
+         outline-color: $buttonColorActive;
+      }
+
+   }
+}

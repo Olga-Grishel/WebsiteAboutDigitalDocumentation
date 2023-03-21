@@ -1,0 +1,187 @@
+@media screen and (max-width: 850px) {
+
+   h1 {
+      font-size: 36px;
+      line-height: 40px;
+   }
+
+   .carousel-caption {
+      right: 20px;
+      left: 100px;
+      bottom: 50px;
+
+   }
+
+   .benefits {
+      gap: 50px;
+
+   }
+
+
+}
+
+
+@media screen and (max-width: 765px) {
+   .header-menu {
+      margin: 0px 0px;
+   }
+
+   .toggle-logo {
+      margin-right: 500px;
+   }
+
+   .toggle {
+      clear: both;
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      line-height: 40px;
+      width: 100%;
+      color: $buttonColor;
+      transition: all .1s linear;
+      padding: 10px 0px;
+
+   }
+
+   .toggle:hover {
+      background: $backgroundfon;
+   }
+
+   #checkbox-menu:checked+label .touch li {
+      opacity: 1;
+      visibility: visible;
+      transition: all .7s linear;
+   }
+
+   #checkbox-menu:checked+label .touch {
+      height: 350px;
+   }
+
+   nav {
+      .header-menu {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         height: 0px;
+         transition: height .3s linear;
+
+         li {
+            display: flex;
+            align-self: center;
+            width: 95%;
+            opacity: 0;
+            visibility: hidden;
+         }
+
+         li a {
+            width: 95%;
+            text-align: center;
+            align-self: center;
+            align-content: center;
+            font-size: 14px;
+
+
+         }
+
+         .logo {
+            display: none;
+         }
+
+         %button {
+            border: none;
+            padding: 0px;
+
+            font-size: 14px;
+         }
+
+         .button_contr {
+            color: rgba(6, 18, 36, 0.9);
+         }
+
+         .button_contr:hover {
+            background: none;
+            border: none;
+            color: $buttonColor;
+         }
+
+         .button_fill {
+            background: none;
+            color: rgba(6, 18, 36, 0.9);
+         }
+
+         .button_fill:hover {
+            background: none;
+            color: $buttonColor;
+         }
+
+         .button_contr:active,
+         .button_fill:active {
+            background: none;
+            border: none;
+            color: $buttonColorActive;
+         }
+
+      }
+
+
+   }
+
+   .contacts-adress {
+
+      .contactsadress-card iframe {
+         width: 500px;
+      }
+   }
+
+}
+
+@media screen and (max-width: 670px) {
+   .toggle-logo {
+      margin-right: 400px;
+   }
+
+   .animation {
+      font-size: 50px;
+
+      .animation2 {
+         font-size: 50px;
+
+      }
+
+   }
+
+   .achievement {
+      padding: 30px 0px;
+      margin: 30px 0px;
+
+      p {
+         @include fontP(normal, 400, 14px, 20px);
+      }
+
+      h2 {
+         font-size: 30px;
+         padding: 10px 0px;
+      }
+
+
+   }
+
+   .carousel-caption {
+      p {
+         display: none;
+      }
+
+      %button {
+
+         font-size: 10px;
+         padding: 5px 10px;
+      }
+   }
+
+   .howWork {
+      margin: 40px 0px;
+   }
+
+
+}

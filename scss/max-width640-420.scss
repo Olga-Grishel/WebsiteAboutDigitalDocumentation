@@ -1,0 +1,208 @@
+@media screen and (max-width: 640px) {
+   .howWork {
+      display: flex;
+      flex-direction: column;
+
+      .howWork__product--img img {
+         width: 400px;
+      }
+
+      .howWork-comfort__text,
+      .howWork__product--img,
+      .howWork__product--text {
+         padding: 20px 20px;
+      }
+   }
+
+
+}
+
+@media screen and (max-width: 575px) {
+   .toggle-logo {
+      margin-right: 300px;
+   }
+
+   .carousel-caption {
+      bottom: 20px;
+
+      %button {
+         font-size: 10px;
+         padding: 2px 5px;
+      }
+   }
+
+   .offer {
+      .offer-packet {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         align-content: center;
+      }
+   }
+
+   .footer {
+      .footer-left {
+         width: 50%;
+
+      }
+
+      .footer-right {
+         width: 50%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+      }
+   }
+
+
+}
+
+@media screen and (max-width: 540px) {
+   .toggle-logo {
+      margin-right: 250px;
+   }
+
+   .carousel-caption {
+      right: 50px;
+      left: 80px;
+
+      button {
+         display: none;
+      }
+
+      h1 {
+         font-size: 14px;
+         line-height: 18px;
+
+      }
+
+      h2 {
+         font-size: 12px;
+         margin-top: 18px;
+
+      }
+
+
+   }
+
+   .howWork {
+
+      .howWork__product--img img {
+         width: 250px;
+      }
+
+      .howWork-comfort__text,
+      .howWork__product--img,
+      .howWork__product--text {
+         padding: 20px 20px;
+      }
+   }
+
+   .news {
+
+      input {
+         width: 300px;
+         margin-bottom: 20px;
+      }
+   }
+
+   .footer {
+
+      .footer-right {
+
+         a,
+         p {
+            @include fontP(normal, 400, 12px, 18px)
+         }
+      }
+   }
+
+   .contacts-adress {
+      margin: 0px 20px;
+
+      .contacts-adress_text {
+         p {
+            margin: 20px 20px;
+         }
+      }
+
+      .contactsadress {
+
+         p {
+            @include fontP(normal, 400, 16px, 20px);
+         }
+
+      }
+
+      .contactsadress-card iframe {
+         width: 350px;
+         height: 150px;
+      }
+   }
+
+   .contacts-form {
+      .input {
+
+         input {
+
+            width: 250px;
+            height: 40px;
+
+         }
+
+         textarea {
+            width: 250px;
+            height: 200px;
+         }
+
+      }
+
+   }
+
+}
+
+@media screen and (max-width: 420px) {
+   .toggle-logo {
+      margin-right: 200px;
+   }
+
+   h1 {
+      font-size: 28px;
+      line-height: 32px;
+   }
+
+   h2 {
+      font-size: 18px;
+      line-height: 120%;
+   }
+
+   .offer {
+
+      .offer-packet {
+
+         .offer-packet__demo,
+         .offer-packet__business,
+         .offer-packet__pro,
+         .offer-packet__individual {
+
+            p {
+               span {
+                  @include fontP(normal, 700, 28px, 32px);
+               }
+            }
+
+         }
+      }
+   }
+
+   .animation {
+      font-size: 38px;
+
+      .animation2 {
+         font-size: 38px;
+
+      }
+
+   }
+}

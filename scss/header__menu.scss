@@ -1,0 +1,66 @@
+@import "nule.scss";
+
+#checkbox-menu,
+.logo-toggle,
+.toggle {
+   display: none;
+}
+
+
+nav {
+   max-width: 1920px;
+   width: 100%;
+
+   label {
+      width: 100%;
+
+   }
+
+   .header-menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin: 10px 0px;
+      padding: 0px;
+
+      li a {
+         transition: color .2s linear;
+      }
+
+
+      a .logo {
+
+         margin-right: 240px;
+
+      }
+
+   }
+
+   .header-menu__a {
+      font-family: $font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      text-transform: uppercase;
+      color: rgba(6, 18, 36, 0.9);
+
+      &:hover {
+         color: $buttonColor;
+      }
+
+      &:hover svg path {
+         stroke: $buttonColor;
+      }
+
+      &:active {
+         color: $buttonColorActive;
+      }
+
+      &:active svg path {
+         stroke: $buttonColorActive;
+      }
+   }
+
+}

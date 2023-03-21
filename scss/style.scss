@@ -1,0 +1,30 @@
+@import "nule.scss";
+
+@import "header__menu.scss";
+
+@import "carousel.scss";
+
+@import "sections.scss";
+
+@import "sections-contacts.scss";
+
+@import "footer.scss";
+
+@import "max-width1650-1350.scss";
+
+@import "max-width1300-1200.scss";
+
+@import "max-width1175-900.scss";
+
+@import "max-width850-670.scss";
+
+@import "max-width640-420.scss";
+
+
+.container {
+   position: relative;
+   max-width: 1920px;
+   margin: 0 auto;
+   padding: 0px;
+
+}

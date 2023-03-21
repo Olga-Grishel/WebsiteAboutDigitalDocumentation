@@ -1,0 +1,87 @@
+@import "nule.scss";
+
+
+.contacts-adress {
+   margin-left: 60px;
+
+   .contacts-adress_text {
+      p {
+         @include fontP(normal, 500, 14px, 24px);
+         margin: 40px 0px;
+      }
+
+      h1 {
+         margin-bottom: 40px;
+      }
+   }
+
+   .contactsadress {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 50px;
+
+      p {
+         @include fontP(normal, 400, 18px, 27px);
+         margin-bottom: 10px;
+      }
+
+      li {
+         margin-bottom: 10px;
+      }
+   }
+
+
+}
+
+.contacts-form {
+   margin-left: 150px;
+   margin-top: 40px;
+
+   .input {
+      display: flex;
+      flex-direction: column;
+
+      label {
+         @include fontP(normal, 400, 18px, 28px);
+         margin: 20px 0px 10px 40px;
+         font-family: $font;
+      }
+
+      input {
+         border: 1.5px solid black;
+         border-radius: 39px;
+         width: 420px;
+         height: 50px;
+         padding: 0px 40px;
+         @include fontP(normal, 400, 18px, 24px);
+         color: $buttonColorActive;
+
+         &:focus {
+
+            outline-color: $buttonColorActive;
+         }
+      }
+
+      textarea {
+         border: 1.5px solid black;
+         border-radius: 10px;
+         width: 420px;
+         height: 169px;
+         padding: 20px 40px;
+         @include fontP(normal, 400, 18px, 24px);
+         color: $buttonColorActive;
+
+         &:focus {
+
+            outline-color: $buttonColorActive;
+         }
+      }
+
+   }
+
+   button {
+      margin: 20px 0px;
+   }
+
+}

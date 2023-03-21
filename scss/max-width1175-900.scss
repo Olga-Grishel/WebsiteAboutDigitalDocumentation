@@ -1,0 +1,129 @@
+@media screen and (max-width: 1175px) {
+   .carousel-caption {
+      width: 30%;
+   }
+}
+
+@media screen and (max-width: 1065px) {
+   %button {
+      font-size: 12px;
+      padding: 5px 10px;
+   }
+
+   .header-menu {
+
+      .header-menu__a {
+         font-size: 14px;
+         line-height: 20px;
+      }
+
+   }
+
+   .carousel-caption {
+      bottom: 70px;
+   }
+
+   .offer {
+      .offer-packet {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+         gap: 20px;
+
+         .offer-packet__demo,
+         .offer-packet__pro {
+            justify-self: end;
+         }
+      }
+   }
+
+   .footer {
+      .footer-left {
+         .footer-logo {
+            p {
+               @include fontP(normal, 400, 12px, 20px);
+            }
+         }
+
+         .footer-menu {
+            display: flex;
+            flex-direction: column;
+
+            a {
+               @include fontP(normal, 400, 14px, 20px);
+            }
+
+            p {
+               @include fontP(normal, 400, 12px, 24px);
+               margin-top: 0px;
+            }
+         }
+      }
+
+      .footer-right {
+         padding-top: 10px;
+
+         a,
+         p {
+            @include fontP(normal, 400, 14px, 20px)
+         }
+
+      }
+
+   }
+
+
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+   .carousel-caption {
+      bottom: 50px;
+
+      p {
+         @include fontP(normal, 400, 12px, 120%);
+         margin: 20px 0;
+      }
+
+      h1 {
+         font-size: 20px;
+         line-height: 24px;
+
+      }
+
+      h2 {
+         font-size: 16px;
+         margin-top: 20px;
+
+      }
+   }
+
+   .footer {
+      .footer-left {
+         width: 25%;
+         display: block;
+         margin-top: 20px;
+         margin-left: 10px;
+
+         .footer-logo {
+
+            p {
+               padding-top: 80px;
+            }
+         }
+
+         .footer-menu {
+            display: none;
+
+         }
+      }
+
+      .footer-right {
+         width: 75%;
+      }
+   }
+
+
+}

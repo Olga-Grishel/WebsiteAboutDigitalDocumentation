@@ -1,0 +1,71 @@
+@media screen and (max-width: 1650px) {
+
+   .carousel-caption {
+      bottom: 200px;
+
+   }
+}
+
+@media screen and (max-width: 1520px) {
+
+   .carousel-caption {
+      bottom: 150px;
+
+   }
+
+   .contacts-adress {
+
+      margin-left: 0px;
+
+
+      .contacts-adress_text {
+         p {
+            margin-left: 60px;
+         }
+
+         h1 {
+            text-align: center;
+         }
+      }
+
+      .contactsadress {
+         justify-content: center;
+      }
+   }
+
+   .contactsadress-card iframe {
+      width: 700px;
+   }
+
+   .formContainer {
+      text-align: center;
+   }
+
+   .contacts-form {
+      margin-left: 0px;
+
+      .input {
+         align-items: center;
+      }
+
+   }
+
+}
+
+@media screen and (max-width: 1420px) {
+
+   .carousel-caption {
+      bottom: 120px;
+
+   }
+
+}
+
+@media screen and (max-width: 1350px) {
+
+   .carousel-caption {
+
+      bottom: 100px;
+   }
+
+}

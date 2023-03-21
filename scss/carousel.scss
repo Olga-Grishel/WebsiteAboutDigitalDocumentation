@@ -1,0 +1,19 @@
+@import "nule.scss";
+
+.carousel-caption {
+   max-width: 586px;
+   right: 700px;
+   bottom: 300px;
+   left: 200px;
+   text-align: left;
+
+   p {
+      @include fontP(normal, 400, 18px, 130%);
+      margin: 40px 0;
+   }
+
+   h2 {
+      margin-top: 50px;
+   }
+
+}
